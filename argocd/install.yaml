@@ -3181,7 +3181,7 @@ spec:
         - argocd-repo-server
         - --redis
         - argocd-redis:6379
-        - --disable-tls=true # Configuring inbound TLS for argocd-repo-server
+        # - --disable-tls=true # Configuring inbound TLS for argocd-repo-server
         env:
         - name: ARGOCD_RECONCILIATION_TIMEOUT
           valueFrom:
@@ -3382,7 +3382,7 @@ spec:
       containers:
       - command:
         - argocd-server
-        - --insecure=true # Disables inbound TLS options for argocd-server
+        # - --insecure=true # Disables inbound TLS options for argocd-server
         env:
         - name: ARGOCD_SERVER_INSECURE
           valueFrom:
