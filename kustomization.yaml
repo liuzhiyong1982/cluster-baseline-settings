@@ -5,3 +5,4 @@ resources:
 - ./kured
 - ./datadog
 - ./ingress-nginx
+- ./rancher
