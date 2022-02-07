@@ -7,7 +7,7 @@ spec:
     spec:
       nodeSelector:
         kubernetes.io/os: linux
-        # agentpool: system
+        agentpool: system
       tolerations:
       - key: CriticalAddonsOnly
         effect: NoSchedule
@@ -23,7 +23,7 @@ spec:
     spec:
       nodeSelector:
         kubernetes.io/os: linux
-        # agentpool: system
+        agentpool: system
       tolerations:
       - key: CriticalAddonsOnly
         effect: NoSchedule
@@ -39,7 +39,7 @@ spec:
     spec:
       nodeSelector:
         kubernetes.io/os: linux
-        # agentpool: system
+        agentpool: system
       tolerations:
       - key: CriticalAddonsOnly
         effect: NoSchedule

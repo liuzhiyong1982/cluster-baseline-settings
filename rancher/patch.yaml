@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rancher
+spec:
+  template:
+    spec:
+      nodeSelector:
+        kubernetes.io/os: linux
+        agentpool: system
+      tolerations:
+      - key: CriticalAddonsOnly
+        effect: NoSchedule
+        operator: Equal
+        value: "true"
